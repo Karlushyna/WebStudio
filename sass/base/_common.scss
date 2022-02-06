@@ -1,0 +1,15 @@
+body {
+  font-family: "Roboto", sans-serif;
+  @include font(14px, 400, 0.03em, 1.71);
+
+  color: var(--main-text-color);
+  margin: 0;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
