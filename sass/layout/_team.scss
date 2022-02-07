@@ -7,6 +7,11 @@
     --card-item: 4;
   }
 }
+.team-container {
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+  }
+}
 .card-list {
   width: 100%;
 }

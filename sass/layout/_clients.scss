@@ -1,32 +1,50 @@
 .clients {
   --card-item: 2;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     --card-item: 3;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     --card-item: 6;
   }
 }
 
+.clients-container {
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+  }
+}
+
 .clients-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-gap));
-  margin-top: calc(-1 * var(--card-gap));
+  justify-content: center;
+  @media screen and (max-width: 767px) {
+    flex-direction: row;
+  }
+
+  @include tab {
+    margin-left: calc(-1 * var(--card-gap));
+    margin-top: calc(-1 * var(--card-gap));
+  }
 }
 .clients__item {
   width: calc(100% / var(--card-item) - var(--card-gap));
-  margin-left: var(--card-gap);
+
   margin-top: var(--card-gap);
+
+  &:nth-child(2n) {
+    margin-left: var(--card-gap);
+  }
+  @include tab {
+    margin-left: var(--card-gap);
+  }
 
   // margin-right: var(--card-gap);
   // margin-bottom: var(--card-gap);
   // width: calc((100% - var(--card-item) * 30px) / var(--card-item));
 }
 .clients__link {
+  height: 92px;
   max-width: 210px;
-  max-height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   background-color: var(--second-priority-color);
@@ -39,10 +57,10 @@
     border: 1px solid var(--accent-color);
   }
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     max-width: 226px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     max-width: 170px;
   }
 }

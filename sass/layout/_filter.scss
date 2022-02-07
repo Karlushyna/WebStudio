@@ -1,16 +1,22 @@
+.filter {
+  @media screen and (max-width: 767px) {
+    padding-left: 15px;
+  }
+}
+
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-  @media screen and (min-width: 768px) {
+  @include tab {
     justify-content: center;
   }
 }
 .filter-list__gap {
   margin-bottom: 40px;
-  @media screen and (min-width: 768px) {
+  @include tab {
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desk {
     margin-bottom: 50px;
   }
 }
@@ -29,7 +35,6 @@
 .filter-list__button {
   background-color: var(--background-color);
   border-radius: 4px;
-  /* min-width: 73px; */
   padding: 10px 22px;
   font-family: inherit;
   @include font(16px, 500, 0.03em, 1.62);

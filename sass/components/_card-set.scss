@@ -1,16 +1,20 @@
 .card-set {
-  display: block;
+  // display: block;
+  display: flex;
+  flex-wrap: wrap;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @include tab {
     margin-left: calc(-1 * var(--card-gap));
     margin-top: calc(-1 * var(--card-gap));
   }
 }
 
 .card-set__item {
-  @media screen and (min-width: 768px) {
+  @include tab {
     width: calc(100% / var(--card-item) - var(--card-gap));
     margin-left: var(--card-gap);
     margin-top: var(--card-gap);
