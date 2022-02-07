@@ -139,7 +139,7 @@
   @extend %align-list;
   flex-direction: row;
   justify-content: center;
-  @include font(12px, null, 1.16, 0.03em);
+  @include font(12px, null, 0.03em, 1.16);
 
   @include desk {
     @include font(14px, null, 1.71, null);
