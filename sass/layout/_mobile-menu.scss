@@ -50,16 +50,19 @@
     margin-bottom: 32px;
   }
 }
+
 .mob-menu-list__link {
   @include font(40px, 500, 0.02em, 1.17);
   color: var(--main-color);
   transition: color var(--main-effect);
 
   &:hover,
-  &:focus,
-  .current {
+  &:focus {
     color: var(--accent-color);
   }
+}
+.current-mob {
+  color: var(--accent-color);
 }
 
 .mob-contact-list {
