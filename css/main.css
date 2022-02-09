@@ -670,8 +670,11 @@ body {
   transition: color var(--main-effect);
 }
 
-.mob-menu-list__link:hover, .mob-menu-list__link:focus,
-.mob-menu-list__link .current {
+.mob-menu-list__link:hover, .mob-menu-list__link:focus {
+  color: var(--accent-color);
+}
+
+.current-mob {
   color: var(--accent-color);
 }
 
@@ -866,18 +869,6 @@ body {
 @media screen and (min-width: 1200px) {
   .features {
     --card-item: 4;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .features-container {
-    max-width: 738px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .features-container {
-    max-width: 1170px;
   }
 }
 
