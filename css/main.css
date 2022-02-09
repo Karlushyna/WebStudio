@@ -403,6 +403,7 @@ body {
   margin-right: 8px;
   transition: fill var(--main-effect), background-color var(--main-effect), border-color var(--main-effect);
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .checkbox:checked + .checkbox__icon {
@@ -709,15 +710,16 @@ body {
 .mob-social-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
+  margin-top: -10px;
+  margin-left: -10px;
 }
 
 .mob-social-list__item {
-  padding-top: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .mob-social-list__item:not(:last-child) {
-  margin-right: 10px;
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
@@ -1077,13 +1079,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: baseline;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-container {
     flex-wrap: nowrap;
-    align-items: baseline;
     text-align: start;
   }
 }
@@ -1318,6 +1320,7 @@ body {
   padding: 20px 24px;
   border: var(--card-border);
   border-top: 0;
+  flex-grow: 1;
 }
 
 .project-card__title {
@@ -1337,6 +1340,7 @@ body {
 .portfolio-link {
   display: flex;
   flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--main-effect);
 }
 
