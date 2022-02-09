@@ -1,4 +1,5 @@
 .team {
+  --card-item: 1;
   background-color: var(--background-color);
   @media screen and (min-width: 768px) {
     --card-item: 2;
@@ -19,26 +20,20 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
-  &:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
-    }
-  }
 }
 
-.team__photo {
-  max-height: 460px;
+// .team__photo {
+//   max-height: 460px;
 
-  @media screen and (min-width: 768px) {
-    max-width: 354px;
-    max-height: 374px;
-  }
-  @media screen and (min-width: 1200px) {
-    max-width: 270px;
-    max-height: 260px;
-  }
-}
+//   @media screen and (min-width: 768px) {
+//     max-width: 354px;
+//     max-height: 374px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     max-width: 270px;
+//     max-height: 260px;
+//   }
+// }
 
 .team__name,
 .team__position {
@@ -47,13 +42,8 @@
   margin-bottom: 16px;
 }
 .team__card {
-  @media screen and (max-width: 479px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  padding: 30px 122px 24px 122px;
+  padding: 30px;
+  text-align: center;
   border: var(--card-border);
   border-top: 0;
   background-color: var(--second-priority-color);
