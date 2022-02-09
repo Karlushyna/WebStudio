@@ -24,6 +24,7 @@
   padding: 20px 24px;
   border: var(--card-border);
   border-top: 0;
+  flex-grow: 1;
 }
 
 .project-card__title {
@@ -39,6 +40,7 @@
   // min-width: 100%;
   display: flex;
   flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--main-effect);
 
   &:hover,

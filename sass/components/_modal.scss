@@ -163,6 +163,7 @@
   transition: fill var(--main-effect), background-color var(--main-effect),
     border-color var(--main-effect);
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .checkbox {
