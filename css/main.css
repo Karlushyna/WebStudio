@@ -952,10 +952,6 @@ body {
   }
 }
 
-.card-list {
-  width: 100%;
-}
-
 .team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -1281,8 +1277,7 @@ body {
   transition: background-color var(--main-effect), color var(--main-effect), box-shadow var(--main-effect);
 }
 
-.filter-list__button:hover, .filter-list__button:focus,
-.filter-list__button .current-button {
+.filter-list__button:hover, .filter-list__button:focus, .filter-list__button.current-button {
   background-color: var(--accent-color);
   color: var(--second-priority-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
